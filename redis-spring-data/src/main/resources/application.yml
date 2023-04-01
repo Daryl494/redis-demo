@@ -1,0 +1,12 @@
+spring:
+  redis:
+    host: 192.168.230.132 #主机
+    port: 6379  #端口
+    password: 123456
+    database: 0 #数据库
+    lettuce:
+      pool:
+        max-active: 8 # 连接池最大连接数
+        max-idle: 8 #最大空闲数
+        min-idle: 0 #最小空闲数
+        max-wait: 1000ms  # 连接等待时间
